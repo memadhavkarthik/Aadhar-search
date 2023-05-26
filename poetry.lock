@@ -115,6 +115,30 @@ optional = false
 python-versions = ">=3.7"
 
 [[package]]
+name = "mysql-connector-python"
+version = "8.0.33"
+description = "MySQL driver written in Python"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+protobuf = ">=3.11.0,<=3.20.3"
+
+[package.extras]
+compression = ["lz4 (>=2.1.6,<=4.3.2)", "zstandard (>=0.12.0,<=0.19.0)"]
+dns-srv = ["dnspython (>=1.16.0,<=2.3.0)"]
+gssapi = ["gssapi (>=1.6.9,<=1.8.2)"]
+
+[[package]]
+name = "protobuf"
+version = "3.20.3"
+description = "Protocol Buffers"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[[package]]
 name = "python-dateutil"
 version = "2.8.2"
 description = "Extensions to the standard Python datetime module"
@@ -177,7 +201,7 @@ watchdog = ["watchdog (>=2.3)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "4a3b467770b2d544565d1fe649df401191601c553774d78951ef911bda406e3a"
+content-hash = "0d941263d674a05655cf9c22925304570768a85d9b983c48111ec727a84433fa"
 
 [metadata.files]
 blinker = []
@@ -190,6 +214,8 @@ itsdangerous = []
 jinja2 = []
 jmespath = []
 markupsafe = []
+mysql-connector-python = []
+protobuf = []
 python-dateutil = []
 s3transfer = []
 six = []
